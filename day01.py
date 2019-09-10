@@ -81,3 +81,57 @@
 # bai=int(number[0])
 # zong=ge+shi+bai
 # print('和为',zong)
+
+
+# 3.1
+# import math 
+# r=float(input('请输入顶点到中心的距离')) 
+# s=2*r*math.sin(math.pi/5)
+# Area=5*s*s/(4*math.tan(math.pi/5))
+# print(Area)
+
+
+# 3.2
+# import math
+# x1,y1=map(float,input('请输入经纬度(x1,y1)').split())
+# x2,y2=map(float,input('请输入经纬度(x2,y2)').split())
+# radius=6371.01
+# a=math.radians(x1)
+# b=math.radians(y1)
+# c=math.radians(x2)
+# d=math.radians(y2)
+# d=radius*math.acos(math.sin(a)*math.sin(c)+math.cos(a)*math.cos(c)*math.cos(b-d))
+# print(d)
+
+
+# 3.4
+# import math
+# s=float(input('请输入边长'))
+# Area=5*s*s/(4*math.tan(math.pi/5))
+# print(Area)
+
+
+# 5
+# a=int(input('请输入一个数字'))
+# print(chr(a))
+
+# 6
+# name = input('请输入姓名:')
+# time = float(input('请输入工作时间:'))
+# moeny = float(input('请输入每小时报酬:'))
+# a = float(input('请输入联邦预扣税率:'))
+# b = float(input('请输入州预扣税率:'))
+# print('员工姓名：',name)
+# print('每周工作时间：',time)
+# print('一小时工资：',moeny)
+# print('总工资:',moeny*time)
+# print('扣除的税收：')
+# print('   联邦扣除（20.0%）：',a*moeny*time)
+# print('   州扣除（9.0%）：',b*moeny*time)
+# print('   总扣除：',(a+b)*moeny*time)
+# print('应得的工资：',(1-a-b)*moeny*time)
+
+# 7
+# num=input('请输入一个整数：')
+# b=num[::-1]
+# print(b)
